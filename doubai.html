@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>doubay</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-size: cover;
+            font-family: 'Courier New', Courier, monospace;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            text-align: center;
+        }
+    .video-background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: -1;
+    }
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+        .image-container img {
+            width: 300px; 
+            height: auto;
+            border: 2px solid #ffffff; 
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 0, 255, 0.7); 
+        }
+        .text {
+            margin-top: 20px;
+            font-size: 2em; 
+            color: rgb(255, 255, 255); 
+            text-shadow: 0px 0px 8px #ffffff, 0px 0px 15px #ffffff, 0px 0px 25px #ffffff; 
+            letter-spacing: 2px; 
+        }
+    </style>
+</head>
+<body>
+      <div class="video-background">
+    <video autoplay muted loop playsinline>
+      <source src="https://cdn.discordapp.com/attachments/1259649705978368141/1410286824936443987/Funk_Da_Montanha_-_chipbagov_Super_Slowed_extended_x_AMG_CLS_63.mp4?ex=68b07774&is=68af25f4&hm=e37e5be5475f832fa69f4addeaf282ec143a6d27fb89864b7724610c461714e2&" type="video/mp4">
+    </video>
+  </div>
+    <div class="image-container">
+        <img src="https://cdn.discordapp.com/attachments/1259649705978368141/1410284379007352974/image.png?ex=68b0752d&is=68af23ad&hm=c31ec32dd3a0ef7bd94e87a38d6a741ad7c29203a1108bad6d312248ccf2b6f5&" alt="Discord Image">
+  <!-- Hidden Autoplay Audio -->
+  <audio src="https://cdn.discordapp.com/attachments/1410279359482171425/1410286250648142025/Funk_Da_Montanha_-_chipbagov_Super_Slowed_extended_x_AMG_CLS_63.mp3?ex=68b076ec&is=68af256c&hm=4777da4aaa6a5b4de9a62f44bb760b4578b6c8939574abf63ccfd5cdfae01a7f&" autoplay loop hidden></audio>
+  <script>
+  const bgm = new Audio('https://cdn.discordapp.com/attachments/1410279359482171425/1410286250648142025/Funk_Da_Montanha_-_chipbagov_Super_Slowed_extended_x_AMG_CLS_63.mp3?ex=68b076ec&is=68af256c&hm=4777da4aaa6a5b4de9a62f44bb760b4578b6c8939574abf63ccfd5cdfae01a7f&');
+  bgm.loop = true;
+  bgm.volume = 1;
+  bgm.play().catch(() => {
+    document.addEventListener('click', () => bgm.play());
+  });
+
+</script>
+<div class="text">Hi, I'm Doubay and this server has been fucked.</div>
+
+    </script>
+</body>
+</html>
